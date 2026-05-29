@@ -16,7 +16,7 @@ void main()
      if (minimum > num[index]) 
     {
         minimum = num[index];
-        printf("minimum value=%.2f \n",minimum);
     }  
    }
+     printf("minimum value=%.2f \n",minimum);
 }
