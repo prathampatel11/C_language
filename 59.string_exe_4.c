@@ -8,22 +8,29 @@
 void main()
 
 {
-    // create 1d array of char type(string)
     char upper[128], lower[128];
-    int ascii,position;
-    printf("Enter one line text");
-    fflush(stdin);
-    gets(upper);
-    fflush(stdin);
-    for (position = 0; upper[position]!='\0' && position< 128; position++)
-    {
-        ascii = upper[position];
-        if(ascii>=65 && ascii<=90)
-            ascii = ascii + 32; 
-        upper[position] = ascii;
-    }
-    lower[position] = '\0'; 
-    printf("%s",lower);
+    int ascii, position;
+
+    printf("Enter one line of text: ");
+   gets(upper);
+   fflush(stdin);
+    for (position = 0; upper[position] != '\0'; position++) {
+          ascii = upper[position];
+          
+          if (ascii >= 65 && ascii <= 90) 
+          {
+                lower[position] = ascii + 32;
+          }
+    
+          else 
+          {
+                lower[position] = ascii;
+          }
+     }
+     lower[position] = '\0';
+    
+     printf("Converted text: %s\n", lower);
+   
 }
 
    
