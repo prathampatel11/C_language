@@ -5,7 +5,18 @@
 void main()
 {
     
-    float num[] = {12.5, 3.7, 9.8, -2.4, 7.1};
+   float num[] = {12.5, 3.7, 9.8, -2.4, 7.1,3.5, 7.2, 4.8, 6.1, 2.9,
+                        7.8, 15.3, 9.6, 4.2, 12.5,
+                        18.7, 21.4, 6.9, 13.1, 10.0,
+                        5.5, 8.8, 16.2, 11.7, 14.9},minimum =0;
 
-    int sigre
+        
+   for(int index=0;index<5;index++)
+    {
+     if (minimum > num[index]) 
+    {
+        minimum = num[index];
+        printf("minimum value=%.2f \n",minimum);
+    }  
+   }
 }
